@@ -3,7 +3,7 @@ spring:
     gateway:
       routes:
       - id: neo_route
-        uri: http://localhost:8100/login
+        uri: http://www.baidu.com
         filters:
         - AddRequestHeader=X-Request-Foo, Bar
         predicates:
