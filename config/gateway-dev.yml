@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: neo_route
+        uri: http://localhost:8100/login
+        filters:
+        - AddRequestHeader=X-Request-Foo, Bar
+        predicates:
+        - Path=/test
